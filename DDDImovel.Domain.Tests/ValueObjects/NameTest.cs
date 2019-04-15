@@ -1,8 +1,8 @@
 ﻿using System;
-using DDDCommerce.Domain.Store.ValueObjects;
+using DDDImovel.Domain.Store.ValueObjects;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace DDDCommerce.Domain.Tests.ValueObjects
+namespace DDDImovel.Domain.Tests.ValueObjects
 {
     [TestClass]
     public class NameTest

@@ -51,6 +51,10 @@
   <ItemGroup>
     <Compile Include="Imobiliaria\Entities\Imovel.cs" />
     <Compile Include="Imobiliaria\Entities\Person.cs" />
+    <Compile Include="Store\Entities\Imovel.cs" />
+    <Compile Include="Store\Entities\Person.cs" />
+    <Compile Include="Store\ValueObjects\Address.cs" />
+    <Compile Include="Store\ValueObjects\Email.cs" />
     <Compile Include="Store\ValueObjects\Name.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -51,6 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValueObjects\AddressTest.cs" />
+    <Compile Include="ValueObjects\EmailTest.cs" />
     <Compile Include="ValueObjects\NameTest.cs" />
   </ItemGroup>
   <ItemGroup>
