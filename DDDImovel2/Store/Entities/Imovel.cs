@@ -1,4 +1,5 @@
-﻿using DDDImovel.Domain.Store.ValueObjects;
+﻿using DDDImovel.Domain.Store.Enums;
+using DDDImovel.Domain.Store.ValueObjects;
 using DDDImovel.Shared.Entities;
 using System;
 using System.Collections.Generic;
@@ -14,19 +15,22 @@ namespace DDDImovel.Domain.Store.Entities
             string title,
             string description,
             Address address,
-            decimal price
+            decimal price,
+            Status status
             )
         {
             Title = title;
             Description = description;
             Address = address;
             Price = price;
+            Status = status;
         }
 
         public string Title { get; private set; }
         public string Description { get; private set; }
         public Address Address { get; private set; }
         public decimal Price { get; private set; }
+        public Status Status { get; set; }
 
         public override string ToString()
         {

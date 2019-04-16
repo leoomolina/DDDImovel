@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BACB8F98-0F44-4DEF-801C-1DC8990D3A55}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DDDImovel.Domain</RootNamespace>
-    <AssemblyName>DDDImovel.Domain</AssemblyName>
+    <ProjectGuid>{9DD1CC78-36F4-46C0-B01B-ABDBB6F1061E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DDDImovel.Console</RootNamespace>
+    <AssemblyName>DDDImovel.Console</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -31,14 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Flunt, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Flunt.1.0.3\lib\netstandard2.0\Flunt.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,25 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Store\Entities\Venda.cs" />
-    <Compile Include="Store\Entities\Imovel.cs" />
-    <Compile Include="Store\Entities\Person.cs" />
-    <Compile Include="Store\Enums\Status.cs" />
-    <Compile Include="Store\Repositories\IPersonRepository.cs" />
-    <Compile Include="Store\Repositories\IVendaRepository.cs" />
-    <Compile Include="Store\Repositories\IImovelRepository .cs" />
-    <Compile Include="Store\ValueObjects\Address.cs" />
-    <Compile Include="Store\ValueObjects\Email.cs" />
-    <Compile Include="Store\ValueObjects\Name.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DDDImovel.Shared\DDDImovel.Shared.csproj">
       <Project>{c4bd79c8-3dc5-4bef-8fb6-2de434f8979d}</Project>
       <Name>DDDImovel.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DDDImovel2\DDDImovel.Domain.csproj">
+      <Project>{bacb8f98-0f44-4def-801c-1dc8990d3a55}</Project>
+      <Name>DDDImovel.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
