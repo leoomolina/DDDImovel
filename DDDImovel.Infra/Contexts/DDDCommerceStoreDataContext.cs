@@ -1,4 +1,5 @@
 ﻿using DDDImovel.Domain.Store.Entities;
+using DDDImovel.Infra.Mappings;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -20,5 +21,10 @@ namespace DDDImovel.Infra.Contexts
         public DbSet<Person> Persons { get; set; }
         public DbSet<Imovel> Imovels { get; set; }
         public DbSet<Venda> Vendas { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new PersonMap());
+        }
     }
 }
