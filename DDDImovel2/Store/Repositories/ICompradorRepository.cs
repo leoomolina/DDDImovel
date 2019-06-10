@@ -9,7 +9,6 @@ namespace DDDImovel.Domain.Store.Repositories
     {
         Comprador GetById(Guid id);
         void Save(Comprador comprador);
-        IEnumerable<Comprador> GetCompradores();
     }
 
 }

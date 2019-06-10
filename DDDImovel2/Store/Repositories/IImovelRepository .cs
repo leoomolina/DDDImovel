@@ -6,7 +6,7 @@ namespace DDDImovel.Domain.Store.Repositories
 {
     public interface IImovelRepository
     {
-        Imovel GetById(Guid id);
+        Imovel Get(Guid id);
         IList<Imovel> GetImovels(List<Guid> ids);
 
     }

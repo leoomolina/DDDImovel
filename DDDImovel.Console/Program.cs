@@ -27,7 +27,7 @@ namespace DDDImovel.Console
             IImovelRepository imovelRepository)
         {
             var comprador = compradorRepository.GetById(Guid.NewGuid());
-            var imovel = imovelRepository.GetById(Guid.NewGuid());
+            var imovel = imovelRepository.Get(Guid.NewGuid());
             var vendedor = vendedorRepository.GetById(Guid.NewGuid());
 
             var venda = new Venda(imovel, DateTime.Now, vendedor, comprador);
@@ -38,7 +38,7 @@ namespace DDDImovel.Console
 
     public class FakeImovelRepository : IImovelRepository
     {
-        public Imovel GetById(Guid id)
+        public Imovel Get(Guid id)
         {
             //É somente um teste, portanto, retornaremos um mesmo produto e sem vínculo de Id(Guid)
             return new Imovel("Imovel1",
