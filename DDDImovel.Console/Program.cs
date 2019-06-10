@@ -14,23 +14,23 @@ namespace DDDImovel.Console
     {
         static void Main(string[] args)
         {
-            var fakeClienteRepository = new FakeClienteRepository();
+            var fakeCompradorRepository = new FakeCompradorRepository();
             var fakeVendedorRepository = new FakeVendedorRepository();
             var fakeImovelRepository = new FakeImovelRepository();
-            GerarVenda(fakeClienteRepository, fakeVendedorRepository, fakeImovelRepository);
+            GerarVenda(fakeCompradorRepository, fakeVendedorRepository, fakeImovelRepository);
         }
 
 
         public static void GerarVenda(
-            IPersonRepository clienteRepository,
-            IPersonRepository vendedorRepository,
+            ICompradorRepository compradorRepository,
+            IVendedorRepository vendedorRepository,
             IImovelRepository imovelRepository)
         {
-            var cliente = clienteRepository.GetById(Guid.NewGuid());
+            var comprador = compradorRepository.GetById(Guid.NewGuid());
             var imovel = imovelRepository.GetById(Guid.NewGuid());
             var vendedor = vendedorRepository.GetById(Guid.NewGuid());
 
-            var venda = new Venda(imovel, DateTime.Now, vendedor, cliente);
+            var venda = new Venda(imovel, DateTime.Now, vendedor, comprador);
             imovel.Status = Status.Vendido;
 
         }
@@ -54,57 +54,56 @@ namespace DDDImovel.Console
         }
     }
 
-    public class FakeClienteRepository : IPersonRepository
+    public class FakeCompradorRepository : ICompradorRepository
     {
 
-        // Criação Cliente Fake para fazermos testes
-        public Person GetById(Guid id)
+        // Criação Comprador Fake para fazermos testes
+        public Comprador GetById(Guid id)
         {
-            var clienteFake = new Person
+            var compradorFake = new Comprador
             (
-                new Name("Teste", "Cliente"),
-                new Email("teste@teste.com.br"),
-                "99123-4567",
+                new Name("Teste", "Comprador"),
                 "123.456.789-00",
-                "Cliente"
+                "Comprador"
             );
-            return clienteFake;
+
+            return compradorFake;
         }
 
-        public void Save(Person cliente)
+        public void Save(Comprador comprador)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Person> GetPersons()
+        public IEnumerable<Comprador> GetCompradores()
         {
             throw new NotImplementedException();
         }
     }
 
-    public class FakeVendedorRepository : IPersonRepository
+    public class FakeVendedorRepository : IVendedorRepository
     {
 
         // Criação Vendedor Fake para fazermos testes
-        public Person GetById(Guid id)
+        public Vendedor GetById(Guid id)
         {
-            var vendedorFake = new Person
+            var vendedorFake = new Vendedor
             (
                 new Name("Teste", "Vendedor"),
-                new Email("teste@teste.com.br"),
-                "99123-4567",
                 "123.456.789-00",
-                "Vendedor"
+                "Vendedor",
+                "123.456-00"
             );
+
             return vendedorFake;
         }
 
-        public void Save(Person customer)
+        public void Save(Vendedor vendedor)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Person> GetPersons()
+        public IEnumerable<Vendedor> GetVendedores()
         {
             throw new NotImplementedException();
         }

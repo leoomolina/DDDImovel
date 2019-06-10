@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 //Update-Database
 namespace DDDImovel.Infra.Contexts
 {
-    public class DDDCommerceStoreDataContext : DbContext
+    public class DDDImovelStoreDataContext : DbContext
     {
-        public DDDCommerceStoreDataContext() : base (@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BestLocationDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False")
+        public DDDImovelStoreDataContext() : base (@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BestLocationDataBase;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False")
         {
             Configuration.ProxyCreationEnabled = false;
         }
@@ -25,6 +25,8 @@ namespace DDDImovel.Infra.Contexts
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new PersonMap());
+            modelBuilder.Configurations.Add(new ImovelMap());
+            modelBuilder.Configurations.Add(new VendaMap());
         }
     }
 }

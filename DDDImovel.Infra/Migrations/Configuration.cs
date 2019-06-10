@@ -5,14 +5,14 @@ namespace DDDImovel.Infra.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<DDDImovel.Infra.Contexts.DDDCommerceStoreDataContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<DDDImovel.Infra.Contexts.DDDImovelStoreDataContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(DDDImovel.Infra.Contexts.DDDCommerceStoreDataContext context)
+        protected override void Seed(DDDImovel.Infra.Contexts.DDDImovelStoreDataContext context)
         {
             //  This method will be called after migrating to the latest version.
 

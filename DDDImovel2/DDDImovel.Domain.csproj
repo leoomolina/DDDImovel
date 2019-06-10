@@ -49,11 +49,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Store\Entities\Comprador.cs" />
     <Compile Include="Store\Entities\Venda.cs" />
     <Compile Include="Store\Entities\Imovel.cs" />
     <Compile Include="Store\Entities\Person.cs" />
+    <Compile Include="Store\Entities\Vendedor.cs" />
     <Compile Include="Store\Enums\Status.cs" />
-    <Compile Include="Store\Repositories\IPersonRepository.cs" />
+    <Compile Include="Store\Repositories\IVendedorRepository.cs" />
+    <Compile Include="Store\Repositories\ICompradorRepository.cs" />
     <Compile Include="Store\Repositories\IVendaRepository.cs" />
     <Compile Include="Store\Repositories\IImovelRepository .cs" />
     <Compile Include="Store\ValueObjects\Address.cs" />

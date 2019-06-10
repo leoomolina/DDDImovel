@@ -1,5 +1,4 @@
 ﻿using DDDImovel.Domain.Store.ValueObjects;
-using DDDImovel.Shared.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,22 +7,18 @@ using System.Threading.Tasks;
 
 namespace DDDImovel.Domain.Store.Entities
 {
-    public abstract class Person : Entity
+    public class Comprador : Person
     {
-        public Person(
+        public Comprador(
             Name name,
             string cpf,
             string tipoPessoa
-            )
+            ):base(name, cpf, tipoPessoa)
         {
             Name = name;
             Cpf = cpf;
             TipoPessoa = tipoPessoa;
         }
-        public Name Name { get; set; }
-        public Email Email { get; set; }
-        public string Telefone { get; set; }
-        public string Cpf { get; set; }
-        public string TipoPessoa { get; set; }
+        
     }
 }

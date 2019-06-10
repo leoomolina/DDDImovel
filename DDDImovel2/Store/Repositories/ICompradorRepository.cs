@@ -5,12 +5,11 @@ using DDDImovel.Domain.Store.Entities;
 namespace DDDImovel.Domain.Store.Repositories
 {
     //Aqui definimos as ações relacionadas à Entidade em relação a seu acesso a dados 
-    public interface IPersonRepository
+    public interface ICompradorRepository
     {
-        Person GetById(Guid id);
-        void Save(Person customer);
-        IEnumerable<Person> GetPersons();
-
+        Comprador GetById(Guid id);
+        void Save(Comprador comprador);
+        IEnumerable<Comprador> GetCompradores();
     }
 
 }
