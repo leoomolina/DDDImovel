@@ -10,7 +10,7 @@ using DDDImovel.Infra.Contexts;
 
 namespace DDDImovel.Infra.Repositories
 {
-    class VendedorRepository : IVendedorRepository
+    public class VendedorRepository : IVendedorRepository
     {
         private readonly DDDImovelStoreDataContext _context;
 

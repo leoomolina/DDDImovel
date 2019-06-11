@@ -10,7 +10,7 @@ using DDDImovel.Infra.Contexts;
 
 namespace DDDImovel.Infra.Repositories
 {
-    class CompradorRepository : ICompradorRepository
+    public class CompradorRepository : ICompradorRepository
     {
         private readonly DDDImovelStoreDataContext _context;
 
