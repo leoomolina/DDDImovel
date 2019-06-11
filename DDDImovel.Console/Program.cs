@@ -48,7 +48,12 @@ namespace DDDImovel.Console
                 Status.NaoVendido);
         }
 
-        public IList<Imovel> GetImovels(List<Guid> ids)
+        public Task<List<Imovel>> GetImovels()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Save(Imovel imovel)
         {
             throw new NotImplementedException();
         }

@@ -2,16 +2,14 @@
 using System.Collections.Generic;
 using DDDImovel.Domain.Entities;
 
-namespace DDDImovel.Domain.Store.Repositories
+namespace DDDImovel.Domain.Repositories
 {
     public interface IVendaRepository
     {
         void Save(Venda venda);
 
-        Imovel GetImovelById(Guid imovelId);
+        Venda GetVendaById(Guid vendaId);
 
-        Comprador GetCompradorById(Guid compradorId);
-
-        Vendedor GetVendedorById(Guid compradorId);
+        List<Venda> GetVendas();
     }
 }
