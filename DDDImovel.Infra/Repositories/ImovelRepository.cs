@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DDDImovel.Domain.Store.Entities;
+using DDDImovel.Domain.Entities;
 using DDDImovel.Infra.Contexts;
-using DDDImovel.Domain.Store.Repositories;
+using DDDImovel.Domain.Repositories;
 
 namespace DDDImovel.Infra.Repositories
 {

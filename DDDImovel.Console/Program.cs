@@ -1,7 +1,7 @@
-﻿using DDDImovel.Domain.Store.Entities;
-using DDDImovel.Domain.Store.Enums;
-using DDDImovel.Domain.Store.Repositories;
-using DDDImovel.Domain.Store.ValueObjects;
+﻿using DDDImovel.Domain.Entities;
+using DDDImovel.Domain.Enums;
+using DDDImovel.Domain.Repositories;
+using DDDImovel.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -75,7 +75,7 @@ namespace DDDImovel.Console
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Comprador> GetCompradores()
+        public Task<List<Comprador>> GetCompradores()
         {
             throw new NotImplementedException();
         }
@@ -103,7 +103,7 @@ namespace DDDImovel.Console
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Vendedor> GetVendedores()
+        public Task<List<Vendedor>> GetVendedores()
         {
             throw new NotImplementedException();
         }

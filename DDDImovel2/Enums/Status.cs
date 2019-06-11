@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDDImovel.Infra.Repositories
+namespace DDDImovel.Domain.Enums
 {
-    class CustomerRepository
+    public enum Status
     {
-
+        NaoVendido = 1,
+        Vendido = 2
     }
 }

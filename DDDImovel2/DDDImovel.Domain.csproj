@@ -49,19 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Store\Entities\Comprador.cs" />
-    <Compile Include="Store\Entities\Venda.cs" />
-    <Compile Include="Store\Entities\Imovel.cs" />
-    <Compile Include="Store\Entities\Person.cs" />
-    <Compile Include="Store\Entities\Vendedor.cs" />
-    <Compile Include="Store\Enums\Status.cs" />
-    <Compile Include="Store\Repositories\IVendedorRepository.cs" />
-    <Compile Include="Store\Repositories\ICompradorRepository.cs" />
-    <Compile Include="Store\Repositories\IVendaRepository.cs" />
-    <Compile Include="Store\Repositories\IImovelRepository .cs" />
-    <Compile Include="Store\ValueObjects\Address.cs" />
-    <Compile Include="Store\ValueObjects\Email.cs" />
-    <Compile Include="Store\ValueObjects\Name.cs" />
+    <Compile Include="Entities\Comprador.cs" />
+    <Compile Include="Entities\Venda.cs" />
+    <Compile Include="Entities\Imovel.cs" />
+    <Compile Include="Entities\Vendedor.cs" />
+    <Compile Include="Enums\Status.cs" />
+    <Compile Include="Repositories\ICompradorRepository.cs" />
+    <Compile Include="Repositories\IVendaRepository.cs" />
+    <Compile Include="Repositories\IImovelRepository .cs" />
+    <Compile Include="Repositories\IVendedorRepository.cs" />
+    <Compile Include="ValueObjects\Address.cs" />
+    <Compile Include="ValueObjects\Email.cs" />
+    <Compile Include="ValueObjects\Name.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

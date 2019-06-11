@@ -7,13 +7,13 @@ namespace DDDImovel.Infra.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class CriacaoTablesVendas : IMigrationMetadata
+    public sealed partial class v1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CriacaoTablesVendas));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(v1));
         
         string IMigrationMetadata.Id
         {
-            get { return "201906092333026_CriacaoTablesVendas"; }
+            get { return "201906110248219_v1"; }
         }
         
         string IMigrationMetadata.Source

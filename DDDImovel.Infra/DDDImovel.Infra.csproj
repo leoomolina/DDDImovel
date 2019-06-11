@@ -37,6 +37,8 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Flunt, Version=1.0.3.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -49,19 +51,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexts\DDDImovelStoreDataContext.cs" />
+    <Compile Include="Mappings\CompradorMap.cs" />
     <Compile Include="Mappings\ImovelMap.cs" />
-    <Compile Include="Mappings\PersonMap.cs" />
     <Compile Include="Mappings\VendaMap.cs" />
-    <Compile Include="Migrations\201906092323069_CriacaoTablesImovelPersons.cs" />
-    <Compile Include="Migrations\201906092323069_CriacaoTablesImovelPersons.Designer.cs">
-      <DependentUpon>201906092323069_CriacaoTablesImovelPersons.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906092333026_CriacaoTablesVendas.cs" />
-    <Compile Include="Migrations\201906092333026_CriacaoTablesVendas.Designer.cs">
-      <DependentUpon>201906092333026_CriacaoTablesVendas.cs</DependentUpon>
+    <Compile Include="Mappings\VendedorMap.cs" />
+    <Compile Include="Migrations\201906110248219_v1.cs" />
+    <Compile Include="Migrations\201906110248219_v1.Designer.cs">
+      <DependentUpon>201906110248219_v1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\VendedorRepository.cs" />
+    <Compile Include="Repositories\CompradorRepository.cs" />
     <Compile Include="Repositories\ImovelRepository.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -82,11 +83,8 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201906092323069_CriacaoTablesImovelPersons.resx">
-      <DependentUpon>201906092323069_CriacaoTablesImovelPersons.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906092333026_CriacaoTablesVendas.resx">
-      <DependentUpon>201906092333026_CriacaoTablesVendas.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906110248219_v1.resx">
+      <DependentUpon>201906110248219_v1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

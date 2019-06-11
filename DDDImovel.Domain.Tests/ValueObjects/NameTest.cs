@@ -1,5 +1,5 @@
 ﻿using System;
-using DDDImovel.Domain.Store.ValueObjects;
+using DDDImovel.Domain.ValueObjects;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DDDImovel.Domain.Tests.ValueObjects

@@ -1,4 +1,4 @@
-﻿using DDDImovel.Domain.Store.Entities;
+﻿using DDDImovel.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace DDDImovel.Infra.Mappings
 {
-    public class PersonMap : EntityTypeConfiguration<Person>
+    class VendedorMap : EntityTypeConfiguration<Vendedor>
     {
-        public PersonMap()
+        public VendedorMap()
         {
-            ToTable("Person");
+            ToTable("Vendedor");
             HasKey(x => x.Id);
             Property(x => x.Cpf).IsRequired().HasMaxLength(11).IsFixedLength();
             Property(x => x.Email.MailAddress).HasMaxLength(60);

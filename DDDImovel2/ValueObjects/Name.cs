@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using DDDImovel.Shared.ValueObject;
 using Flunt.Validations;
 
-namespace DDDImovel.Domain.Store.ValueObjects
+namespace DDDImovel.Domain.ValueObjects
 {
     public class Name : ValueObject
     {

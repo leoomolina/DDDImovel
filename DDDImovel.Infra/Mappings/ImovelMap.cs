@@ -1,4 +1,4 @@
-﻿using DDDImovel.Domain.Store.Entities;
+﻿using DDDImovel.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;

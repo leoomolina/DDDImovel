@@ -1,7 +1,8 @@
-﻿using DDDImovel.Shared.Entities;
+﻿using DDDImovel.Domain.Entities;
+using DDDImovel.Shared.Entities;
 using System;
 
-namespace DDDImovel.Domain.Store.Entities
+namespace DDDImovel.Domain.Entities
 {
     public class Venda : Entity
     {

@@ -1,5 +1,5 @@
-﻿using DDDImovel.Domain.Store.Enums;
-using DDDImovel.Domain.Store.ValueObjects;
+﻿using DDDImovel.Domain.Enums;
+using DDDImovel.Domain.ValueObjects;
 using DDDImovel.Shared.Entities;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDDImovel.Domain.Store.Entities
+namespace DDDImovel.Domain.Entities
 {
     public class Imovel : Entity
     {

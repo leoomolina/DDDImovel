@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDDImovel.Domain.Store.ValueObjects
+namespace DDDImovel.Domain.ValueObjects
 {
     public class Address : ValueObject
     {
