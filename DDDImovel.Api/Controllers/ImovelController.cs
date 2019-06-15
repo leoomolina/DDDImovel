@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DDDImovel.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/imovel")]
     public class ImovelController : Controller
     {
         private readonly IImovelRepository _repository;

@@ -13,9 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDImovel.Console", "DDDImo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDImovel.Infra", "DDDImovel.Infra\DDDImovel.Infra.csproj", "{5415113A-DB4A-44E2-B8CD-2657B624B88E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDImovel.Api", "DDDImovel.Api\DDDImovel.Api.csproj", "{2CFD5E92-4F46-4811-B50B-B2FC070564CC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDImovel.WebApi", "DDDImovel.WebApi\DDDImovel.WebApi.csproj", "{4446A156-B448-40DF-A746-F363FFCFC79F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDDImovel.Api", "DDDImovel.Api\DDDImovel.Api.csproj", "{2CFD5E92-4F46-4811-B50B-B2FC070564CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +45,6 @@ Global
 		{2CFD5E92-4F46-4811-B50B-B2FC070564CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CFD5E92-4F46-4811-B50B-B2FC070564CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CFD5E92-4F46-4811-B50B-B2FC070564CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4446A156-B448-40DF-A746-F363FFCFC79F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4446A156-B448-40DF-A746-F363FFCFC79F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4446A156-B448-40DF-A746-F363FFCFC79F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4446A156-B448-40DF-A746-F363FFCFC79F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DDDImovel.Infra.Repositories
 {
-    class VendaRepository : IVendaRepository
+    public class VendaRepository : IVendaRepository
     {
         private readonly DDDImovelStoreDataContext _context;
 

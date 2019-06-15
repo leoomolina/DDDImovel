@@ -20,16 +20,15 @@ namespace DDDImovel.Api
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            //AddScoped funciona como um Singleton, ou seja, uma única instância desta classe 
+            // única instância desta classe 
             services.AddScoped<DDDImovelStoreDataContext, DDDImovelStoreDataContext>();
 
-            //AddTransient fornece instâncias de cada Interface quando forem necessitadas
-            //Ex.: No ImovelController temos IImovelRepository, esta interface quando requisitada
-            //será "abastecida" com uma implementação de "ImovelRepositoryPersistence2" por exemplo.
-            //Ou por qualquer outra implementação do repositório que for necessário.
             services.AddTransient<IImovelRepository, ImovelRepository>();
+            services.AddTransient<ICompradorRepository, CompradorRepository>();
+            services.AddTransient<IVendedorRepository, VendedorRepository>();
+            services.AddTransient<IVendaRepository, VendaRepository>();
 
-            //Serviço básico para MVC.
+            // Serviço básico para MVC.
             services.AddMvc();
         }
 
